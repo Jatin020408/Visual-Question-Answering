@@ -1,8 +1,6 @@
 # Visual-Question-Answering
-The project is an Android application aimed to help the visually impaired by giving them the ability to take a picture, ask questions about it and the application will provide them with the answers using machine learning techniques and tools.
+The project is  aimed to help the visually impaired by giving them the ability to take a picture, ask questions about it and the application will provide them with the answers using machine learning techniques and tools.
 
-## Demo:
-https://user-images.githubusercontent.com/44211916/170707261-982d3443-eb04-426e-b0ae-0b5fc2f1c357.mp4
 
 ## VQA model:
 ### Dataset used:
@@ -31,19 +29,3 @@ In this part, the image embedding and the question embedding are fused together 
 All of the model training was done on the cloud using Google Colab.  
 The model the GloVe word embedding representation for each word in the question, which was then passed to the RNN, to extract the questions' features representation and the already extracted image features, fused them together, and passed them to MLP, which had a softmax final layer that gave the probability distribution over the 1000 answers in our set.  
 
-### Model Deployment:
-We used TF-Lite library to convert the already trained VQA model into _tflite_ format that can be used for inference on our Android application.  
-![image](https://user-images.githubusercontent.com/44211916/170719887-88759164-a91c-4416-96cc-b0a0e0ca33f9.png)
-
-On the Android application, we used the Android camera API to allow the user to take a picture, then we used Android's SpeechRecognizer API that records the user's question and converts it into text.  
-We apply the same pre-processing steps, we used during training, to both the taken picture and the question.  
-We then run inference on the tflite model and take the answer with the highest probability.  
-Finally, the TextToSpeech API was used to convert the answer into voice. 
-![image](https://user-images.githubusercontent.com/44211916/170724465-907bb34a-4284-4b46-b77d-b0f2db1af3af.png)
-
-## Team Members:
-  - <a href=""> Ashraqat Hisham Ahmed </a>
-  - <a href="https://github.com/Mohamed-AN"> Mohamed Abdelrahman Nasser </a>
-  - <a href="https://github.com/Mostafa-Nafie"> Mostafa Alaa Nafie </a>
-  - <a href="https://github.com/Nadine-Fadlallah"> Nadine Muhammad Fadlallah </a>
-  - <a href="https://github.com/NadaAdelMousa"> Nada Adel Mousa</a>
