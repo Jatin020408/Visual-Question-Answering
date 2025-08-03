@@ -5,11 +5,7 @@ This project implements a deep learning-based Visual Question Answering (VQA) mo
 
 ---
 
-##  Architecture
 
-![Architecture Diagram](A_README_graphic_displays_details_of_a_Visual_Ques.png)
-
----
 
 ##  Project Structure
 
@@ -32,9 +28,6 @@ This project implements a deep learning-based Visual Question Answering (VQA) mo
   - Also includes a CLI for testing single (image, question) inputs.
 
 ---
-
-##  Getting Started
-
 ### Prerequisites
 
 - Python 3.8+
@@ -73,7 +66,7 @@ pip install torch torchvision opencv-python numpy pillow
 
 
 
-## 🧠 Example Output
+##  Example Output
 
 ```
 Input Question: What does the sign say?
@@ -93,7 +86,7 @@ Accuracy is calculated based on how many of the multiple-choice ground truths th
 
 ---
 
-## 📌 Key Hyperparameters
+##  Key Hyperparameters
 
 | Parameter         | Value  |
 |-------------------|--------|
@@ -108,7 +101,7 @@ Accuracy is calculated based on how many of the multiple-choice ground truths th
 
 ---
 
-## 🙌 Acknowledgements
+##  Acknowledgements
 
 - [VQA v2.0 Dataset](https://visualqa.org/)
 - [PyTorch Documentation](https://pytorch.org/)
